@@ -884,9 +884,11 @@ class SettingsStruct:
 
         # KAR/MID options
         self.KarEncoding = 'utf-8'  # Default text encoding in karaoke files
-        self.KarFont = FontData("DejaVuSans.ttf")
+        #self.KarFont = FontData("DejaVuSans-Bold.ttf")
+        self.KarFont = FontData("OpenSans-Bold.ttf")
         self.KarBackgroundColour = (0, 0, 0)
-        self.KarReadyColour = (255,50,50)
+        #self.KarReadyColour = (255,50,50)
+        self.KarReadyColour = (255,69,0)
         self.KarSweepColour = (255,255,255)
         self.KarInfoColour = (0, 0, 200)
         self.KarTitleColour = (100, 100, 255)

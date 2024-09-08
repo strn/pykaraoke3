@@ -163,8 +163,8 @@ TEXT_INFO   = 1
 TEXT_TITLE  = 2
 
 # Debug out MIDI messages as text
-#debug = False
-debug = True
+debug = False
+#debug = True
 
 class midiFile:
     def __init__(self):
@@ -653,7 +653,6 @@ def midiParseData(midiData, ErrorNotifyCallback, Encoding):
     lastNoteMS = None
 
     for track in midifile.trackList:
-        print(f"track: {track}")
         if track.FirstNoteMs and not earliestNoteMS:
             earliestNoteMS = track.FirstNoteMs
         if earliestNoteMS and track.FirstNoteMs < earliestNoteMS:
